@@ -1,0 +1,14 @@
+.key {
+  background-image: url('img/keys.png');
+  background-position: -48px 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.key-row {
+  height: 24px;
+  width: auto;
+  display: inline-block;
+}
