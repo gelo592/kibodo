@@ -1,0 +1,170 @@
+* {
+  font-family: 'Coiny', cursive;
+}
+
+.container {
+  padding-left: 50%;
+  margin-left: -200px;
+}
+
+.kibodo {
+  width: auto;
+  #padding-left: 116px;
+  font-family: 'Coiny', cursive;
+}
+
+.video-hid {
+  display: none;
+}
+
+.key {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  border: 10px solid blue;
+  padding: 12px;
+  margin: 4px;
+  color: #b9b9b9;
+}
+
+.big-key {
+  text-align: center;
+}
+
+.hue-key {
+  background-image: url("../img/hue.svg");
+}
+
+.hue-key-flip {
+  transform: scale(-1, 1);
+}
+
+.turtle-key {
+  background-image: url("../img/toitle.svg");
+}
+
+.rabbit-key {
+  background-image: url("../img/bun.svg");
+}
+
+.grey-key {
+  background-image: url("../img/grayscale.svg");
+}
+
+.invert-key {
+  background-image: url("../img/invert.svg");
+}
+
+.clear-key {
+  background-image: url("../img/clear.svg");
+}
+
+.record-key {
+  background-image: url("../img/record.svg");
+}
+
+.speed-key {
+  background-image: url("../img/speed.svg");
+}
+
+.reverse-key {
+  background-image: url("../img/triangle.svg");
+}
+
+.pause-key {
+  background-image: url("../img/pause.svg");
+}
+
+.globe-key {
+  background-image: url("../img/globe.svg");
+}
+
+.dot-key {
+  background-image: url("../img/dot.svg");
+}
+
+.dot-key-1 {
+  filter: hue-rotate(60deg);
+}
+
+.dot-key-2 {
+  filter: hue-rotate(120deg);
+}
+
+.dot-key-3 {
+  filter: hue-rotate(180deg);
+}
+
+.dot-key-4 {
+  filter: hue-rotate(240deg);
+}
+
+.dot-key-5 {
+  filter: hue-rotate(300deg);
+}
+
+.key-row {
+  display: block;
+}
+
+#kr1 {
+  height: 76px;
+}
+
+#kr1 .key {
+  border-color: #ff5722;
+}
+
+#kr1 .key.key-pressed {
+  border-color: #a54426;
+}
+
+#kr2 {
+  margin-left: 30px;
+  height: 76px;
+}
+
+#kr2 .key {
+  border-color: #00bcd4;
+}
+
+#kr2 .key.key-pressed {
+  border-color: #2f6b73;
+}
+
+#kr3 {
+  height: 122px;
+  margin-left: 60px;
+}
+
+#kr3 .key {
+  border-color: #b9b9b9;
+  height: 74px;
+}
+
+#kr3 .key.key-pressed {
+  border-color: #676666;
+}
+
+#kr4 {
+  margin-left: 12px;
+}
+
+#kr4 .key {
+  border: 10px solid #f5e663;
+}
+
+#kr4 .key.key-pressed-hold {
+  border: 4px solid #f5e663;
+  box-shadow: inset 0 0 0px 6px #d6c31b;
+  width: 36px;
+  height: 36px;
+}
+
+.right {
+  float: right;
+}

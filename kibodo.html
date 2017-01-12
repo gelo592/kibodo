@@ -1,67 +1,110 @@
 <html>
   <head>
-    <link rel="stylesheet" href="kibodo.css" />
+    <!--<link href="https://vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="lib/video.min.css" />
+    <link rel="stylesheet" href="css/kibodo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
   </head>
   <body>
     <div class="container">
+    <!--<iframe width="400px" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140497818&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>-->
+      <div class="vidja">
+        <video id="vid1" class="video" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/car-scene.mp4" type="video/mp4">
+        </video>
+        <video id="vid1r" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/car-scene-reversed.mp4" type="video/mp4">
+        </video>
+        <video id="vid2" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/hiss.mp4" type="video/mp4">
+        </video>
+        <video id="vid2r" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/hiss-reversed.mp4" type="video/mp4">
+        </video>
+        <video id="vid3" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/cats-going-out-now.mp4" type="video/mp4">
+        </video>
+        <video id="vid3r" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/cats-going-out-now-reversed.mp4" type="video/mp4">
+        </video>
+        <video id="vid4" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/cat-batting.mp4" type="video/mp4">
+        </video>
+        <video id="vid4r" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/cat-batting-reversed.mp4" type="video/mp4">
+        </video>
+        <video id="vid5" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/paw-prints.mp4" type="video/mp4">
+        </video>
+        <video id="vid5r" class="video video-hid" autoplay loop preload="auto" width="400" height="297.5" data-setup="{}">
+          <source src="clips/paw-prints-reversed.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!--<div class="playback-info">
+        <h1 class="video-name">Clip A</h1>
+        <div class="speed"><span>playback speed: </span><span class="info"></span></div>
+        <div class="direction"><span>playback direction: </span><span class="info"></span></div>
+        <div class="color"><span>color: </span><span class="info"></span></div>
+        <div class="time"><span>time: </span><span class="info"></span></div>
+      </div>-->
       <div class="kibodo">
         <div id="kr1" class="key-row">
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
+          <div id="r1k1" class="key hue-key" data-key="1" data-function="changePreset" data-keystuffs="0" title="switch out preset row (coming soon)"></div>
+          <div id="r1k2" class="key dot-key dot-key-1" data-key="2" data-function="applyPreset" data-keystuffs="60" title="set video hue to yellowish"></div>
+          <div id="r1k3" class="key dot-key dot-key-2" data-key="3" data-function="applyPreset" data-keystuffs="120" title="set video hue to greenish"></div>
+          <div id="r1k4" class="key dot-key dot-key-3" data-key="4" data-function="applyPreset" data-keystuffs="180" title="set video hue to blueish"></div>
+          <div id="r1k5" class="key dot-key dot-key-4" data-key="5" data-function="applyPreset" data-keystuffs="240" title="set video hue to purplish"></div>
+          <div id="r1k6" class="key dot-key dot-key-5" data-key="6" data-function="applyPreset" data-keystuffs="300" title="set video hue to pinkish"></div>
+          <div id="r1k7" class="key globe-key" data-key="7" data-function="toggleGlobalMode" data-keystuffs="" title="mode for changing all vidjas at once (coming soon)"></div>
+          <!--<div id="r1k8" class="key" data-key="8" data-function="" data-keystuffs=""></div>
+          <div id="r1k9" class="key" data-key="9" data-function="" data-keystuffs=""></div>
+          <div id="r1k10" class="key" data-key="0"></div>
+          <div id="r1k11" class="key" data-key="-"></div>
+          <div id="r1k12" class="key" data-key="="></div>-->
         </div>
         <div id="kr2" class="key-row">
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
+          <div id="r2k1" class="key hue-key" data-key="q" data-function="rotateHue" data-keystuffs="-10" title="'rotate' hue back 10deg"></div>
+          <div id="r2k2" class="key hue-key hue-key-flip" data-key="w" data-function="rotateHue" data-keystuffs="10" title="'rotate' hue forward 10deg"></div>
+          <div id="r2k3" class="key turtle-key" data-key="e" data-function="changePlaybackSpeed" data-keystuffs="-.25" title="slow playback by .25"></div>
+          <div id="r2k4" class="key rabbit-key" data-key="r" data-function="changePlaybackSpeed" data-keystuffs=".25" title="speed up playback by .25"></div>
+          <div id="r2k5" class="key grey-key" data-key="t" data-function="toggleGrey" data-keystuffs="" title="toggle greyscale"></div>
+          <div id="r2k6" class="key invert-key" data-key="y" data-function="toggleInvert" data-keystuffs="" title="toggle invert color mode"></div>
+          <div id="r2k7" class="key clear-key" data-key="u" data-function="clearFilters" title="clear filters"></div>
+          <!--<div id="r2k8" class="key" data-key="i"></div>
+          <div id="r2k9" class="key" data-key="o"></div>
+          <div id="r2k10" class="key" data-key="p"></div>
+          <div id="r2k11" class="key" data-key="["></div>
+          <div id="r2k12" class="key" data-key="]"></div>r-->
         </div>
         <div id="kr3" class="key-row">
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
+          <div id="r3k1" class="key big-key" data-key="a" data-function="setClip" data-keystuffs="1">A</div>
+          <div id="r3k2" class="key big-key" data-key="s" data-function="setClip" data-keystuffs="2">S</div>
+          <div id="r3k3" class="key big-key" data-key="d" data-function="setClip" data-keystuffs="3">D</div>
+          <div id="r3k4" class="key big-key" data-key="f" data-function="setClip" data-keystuffs="4">F</div>
+          <div id="r3k5" class="key big-key" data-key="g" data-function="setClip" data-keystuffs="5">G</div>
+          <!--<div id="r3k6" class="key big-key" data-key="h" data-clip=""></div>
+          <div id="r3k7" class="key big-key" data-key="j"></div>
+          <div id="r3k8" class="key big-key" data-key="k"></div>
+          <div id="r3k9" class="key big-key" data-key="l"></div>
+          <div id="r3k10" class="key big-key" data-key=";"></div>
+          <div id="r3k11" class="key big-key" data-key="Dead"></div>-->
         </div>
         <div id="kr4" class="key-row">
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
-          <div class="key"></div>
+          <div id="r4k1" class="key reverse-key" data-key="z" data-function="toggleReverse" title="play video in reverse :o"></div>
+          <div id="r4k2" class="key pause-key" data-key="x" data-function="togglePlayPause" title="pause (or play)"></div>
+          <div id="r4k3" class="key" data-key="c"></div>
+          <div id="r4k4" class="key record-key right" data-key="v" data-function="startStopRecord" data-keystuffs="" title="record vidja (coming soon)"></div>
+          <!--<div id="r4k5" class="key" data-key="b"></div>
+          <div id="r4k6" class="key" data-key="n"></div>
+          <div id="r4k7" class="key" data-key="m"></div>
+          <div id="r4k8" class="key" data-key=","></div>
+          <div id="r4k9" class="key" data-key="."></div>
+          <div id="r4k10" class="key" data-key="/"></div>-->
         </div>
       </div>
     </div>
+    <!--<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>-->
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="js/kibodo.js"></script>
   </body>
 </html>
